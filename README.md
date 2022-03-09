@@ -21,10 +21,10 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 ### Features
 
 - [x] Criar um fornecedor
-- [x] Buscar usuario pelo id
-- [x] Deletar usuario
-- [x] Editar usuario
-- [x] Listar usuarios
+- [x] Buscar fornecedor pelo id
+- [x] Deletar fornecedor
+- [x] Editar fornecedor
+- [x] Listar fornecedores
 
 <p>Antes de executar, são necessários os seguintes softwares instalados na máquina:</p>
  <ul> 
