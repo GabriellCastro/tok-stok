@@ -57,6 +57,13 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 
 <p> O banco não vem populado então entre na aplicação web e coloque seus fornecedores.</p>
 
+<h3>Execução do Projeto [FRONT-END]:</h3>
+<ul>
+  <li>Faça clone do Projeto.</li>
+</ul>
+  <p>Em em seguida abra no editor de sua preferência.</p>
+  <p>Após o download, execute os seguintes comandos "npm install" e "npm run dev" na pasta "frontend"</p>
+
 ### 💻 Desenvolvedor:
 
 Desenvolvido por Gabriel Castro ! 🥇  
