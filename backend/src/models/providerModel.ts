@@ -14,7 +14,7 @@ const getById = async (id: any) => {
   return collection('providers').findOne(new ObjectId(id));
 };
 
-const create = async ({
+const add = async ({
   nome, razaosocial, cnpj, segmento, endereco, telefone, email,
 }: any) => {
   const { collection } = await connection();
@@ -43,5 +43,5 @@ const exclude = (id: any) => {
 };
 
 export {
-  getById, getAll, create, update, exclude,
+  getById, getAll, add, update, exclude,
 };
