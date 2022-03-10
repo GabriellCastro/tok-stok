@@ -12,7 +12,14 @@ function Header() {
           <h1 className="font-semibold  text-3xl text-center text-white tracking-tight">Fornecedores</h1>
         </div>
         <div>
-          <a href="https://github.com/GabriellCastro" target="_blank" className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700" rel="noreferrer">
+          <a
+            href="https://github.com/GabriellCastro"
+            target="_blank"
+            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-5
+            py-2 border border-transparent rounded-md shadow-sm text-base font-medium
+            text-white bg-gray-800 hover:bg-indigo-900"
+            rel="noreferrer"
+          >
             Github
           </a>
         </div>
