@@ -3,13 +3,17 @@
 import Head from 'next/head';
 import '../styles/globals.css';
 
+import { Provider } from '../context/Provider';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>Tok&Stok</title>
       </Head>
-      <Component {...pageProps} />
+      <Provider>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 }
