@@ -1,4 +1,4 @@
-import { createContext, useMemo, useState } from 'react';
+import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const Context = createContext({});
@@ -7,13 +7,12 @@ export function Provider({ children }) {
   // lista de fornecedores
   const [dataProviders, setDataProviders] = useState([]);
 
-  const contextValue = useMemo(() => ({
-    dataProviders,
-    setDataProviders,
-  }), []);
-
   return (
-    <Context.Provider value={contextValue}>
+    <Context.Provider value={{
+      dataProviders,
+      setDataProviders,
+    }}
+    >
       {children}
     </Context.Provider>
   );
