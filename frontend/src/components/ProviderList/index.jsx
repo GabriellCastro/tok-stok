@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import { useContext, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { Context } from '../../context/Provider';
@@ -72,11 +73,9 @@ function ProviderList() {
 
                    <button
                      type="button"
-                     className="text-white bg-gradient-to-r mt-4 from-teal-400 via-teal-500
-                      to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300
-                      dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5
-                      text-center
-                      mr-2 mb-2"
+                     className="mt-2 whitespace-nowrap inline-flex items-center justify-center px-5
+                     py-2 border border-transparent rounded-md shadow-sm text-base font-medium
+                     text-white bg-gray-800 hover:bg-indigo-900"
                    >
                      Editar
                    </button>
@@ -84,11 +83,9 @@ function ProviderList() {
                    <button
                      type="button"
                      onClick={() => deleteProvider(element._id)}
-                     className="text-white bg-gradient-to-r mt-4 from-teal-400 via-teal-500
-                      to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300
-                      dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5
-                      text-center
-                      mr-2 mb-2"
+                     className="mt-2 whitespace-nowrap inline-flex items-center justify-center px-5
+                     py-2 border border-transparent rounded-md shadow-sm text-base font-medium
+                     text-white bg-gray-800 hover:bg-indigo-900"
                    >
                      Excluir
                    </button>
