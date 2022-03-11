@@ -14,6 +14,9 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 
 - [x] Next.js
 - [x] Hooks
+- [x] React Hook Form
+- [x] Eslint
+- [x] React Modal
 - [x] Context API
 - [x] TailwindCss
 - [x] Toast
@@ -21,7 +24,6 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 ### Features
 
 - [x] Criar um fornecedor
-- [x] Buscar fornecedor pelo id
 - [x] Deletar fornecedor
 - [x] Editar fornecedor
 - [x] Listar fornecedores
