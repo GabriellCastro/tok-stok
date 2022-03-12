@@ -1,5 +1,20 @@
 <p align="center">TOK&STOK TESTE</p>
 
+<h1 align="center">
+	<p>Adicionar e listar</p>
+  <img alt="" title="TaskApp" src="frontend/src/assets/adicionarElistar.gif" height="465" />
+</h1>
+
+<h1 align="center">
+	<p>Excluir e Editar</p>
+  <img alt="" title="TaskApp" src="frontend/src/assets/excluirEeditar.gif" height="465" />
+</h1>
+
+<h1 align="center">
+	<p>Buscar</p>
+  <img alt="" title="TaskApp" src="frontend/src/assets/buscar.gif" height="465" />
+</h1>
+
 As seguintes ferramentas foram usadas na construção do projeto [BACK-END]:
 
 - [x] Node.js
