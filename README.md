@@ -16,10 +16,11 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 - [x] Hooks
 - [x] React Hook Form
 - [x] Eslint
+- [x] Yup
 - [x] React Modal
 - [x] Context API
 - [x] TailwindCss
-- [x] Toast
+- [x] Toastify
 
 ### Features
 
@@ -27,6 +28,7 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 - [x] Deletar fornecedor
 - [x] Editar fornecedor
 - [x] Listar fornecedores
+- [x] Pesquisar Fornecedor
 
 <p>Antes de executar, são necessários os seguintes softwares instalados na máquina:</p>
  <ul> 
@@ -65,6 +67,8 @@ As seguintes ferramentas foram usadas na construção do projeto [FRONT-END]:
 </ul>
   <p>Em em seguida abra no editor de sua preferência.</p>
   <p>Após o download, execute os seguintes comandos "npm install" e "npm run dev" na pasta "frontend"</p>
+  
+<p>http://localhost:3000</p>
 
 ### 💻 Desenvolvedor:
 
