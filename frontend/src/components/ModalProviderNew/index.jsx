@@ -27,7 +27,7 @@ function ModalProviderNew() {
   });
 
   const onSubmit = (data) => {
-    api.put('providers', data)
+    api.post('providers', data)
       .then(({ data: { message } }) => toast.success(message));
     setDataProviders([data, ...dataProviders]);
     reset();
