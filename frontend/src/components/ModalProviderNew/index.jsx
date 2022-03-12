@@ -4,31 +4,21 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { ErrorMessage } from '@hookform/error-message';
 
-import * as yup from 'yup';
 import Modal from 'react-modal';
 
 import { toast } from 'react-toastify';
 import { CgCloseO } from 'react-icons/cg';
 
 import { Context } from '../../context/Provider';
+import schema from '../../utils/schema';
 
 import api from '../../services/api';
-
-const schema = yup.object({
-  nome: yup.string().required(),
-  razaosocial: yup.string().required(),
-  cnpj: yup.string().required(),
-  segmento: yup.string().required(),
-  endereco: yup.string().required(),
-  telefone: yup.string().required(),
-  email: yup.string().required(),
-}).required();
 
 Modal.setAppElement('#__next');
 
 function ModalProviderNew() {
   const {
-    isOpen, toggleModal, setDataProviders, dataProviders,
+    isOpenNew, toggleModalNew, setDataProviders, dataProviders,
   } = useContext(Context);
   const {
     register, handleSubmit, reset, formState: { errors },
@@ -37,17 +27,17 @@ function ModalProviderNew() {
   });
 
   const onSubmit = (data) => {
-    api.post('providers', data)
+    api.put('providers', data)
       .then(({ data: { message } }) => toast.success(message));
     setDataProviders([data, ...dataProviders]);
     reset();
-    toggleModal(false);
+    toggleModalNew();
   };
 
   return (
     <Modal
-      isOpen={isOpen}
-      onRequestClose={toggleModal}
+      isOpen={isOpenNew}
+      onRequestClose={toggleModalNew}
       contentLabel="My dialog"
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
@@ -68,7 +58,7 @@ function ModalProviderNew() {
           <button
             type="button"
             className="mb-4"
-            onClick={toggleModal}
+            onClick={toggleModalNew}
           >
             <CgCloseO color="white" size="22px" />
           </button>

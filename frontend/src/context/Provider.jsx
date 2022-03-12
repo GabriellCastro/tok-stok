@@ -5,18 +5,31 @@ export const Context = createContext({});
 
 export function Provider({ children }) {
   const [dataProviders, setDataProviders] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);
+  const [searchProviders, setSearchProviders] = useState('');
+  const [idProvirder, setIdProvider] = useState('');
+  const [isOpenNew, setIsOpenNew] = useState(false);
+  const [isOpenEdit, setIsOpenEdit] = useState(false);
 
-  function toggleModal() {
-    setIsOpen(!isOpen);
+  function toggleModalNew() {
+    setIsOpenNew(!isOpenNew);
+  }
+
+  function toggleModalEdit() {
+    setIsOpenEdit(!isOpenEdit);
   }
 
   return (
     <Context.Provider value={{
       dataProviders,
       setDataProviders,
-      toggleModal,
-      isOpen,
+      toggleModalNew,
+      toggleModalEdit,
+      isOpenNew,
+      isOpenEdit,
+      searchProviders,
+      setSearchProviders,
+      idProvirder,
+      setIdProvider,
     }}
     >
       {children}
